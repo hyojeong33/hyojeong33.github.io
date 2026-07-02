@@ -2,6 +2,8 @@ import React from "react";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import '../assets/styles/Main.scss';
+import profileImg from '../assets/images/hyojeong.JPG'; // 1. 이미지 임포트 완료!
+
 
 function Main() {
 
@@ -9,7 +11,8 @@ function Main() {
     <div className="container">
       <div className="about-section">
         <div className="image-wrapper">
-          <img src="/3472508066940706128_20240723152953972.jpg" alt="Hyojeong Profile" />
+          {/* 2. 기존 문자열 경로를 중괄호 처리된 profileImg 변수로 변경합니다. */}
+          <img src={profileImg} alt="Hyojeong Profile" />
         </div>
         <div className="content">
           <div className="social_icons">
