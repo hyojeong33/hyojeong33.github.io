@@ -7,8 +7,8 @@
   
 .projects-container .projects-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50px;
+    grid-template-columns: repeat(3, 1fr); /* 🌟 기존 2에서 3으로 변경 (한 줄에 3개) */
+    grid-gap: 30px; /* 🌟 3개가 배치되므로 간격을 50px에서 30px로 좁혀서 공간을 확보합니다 */
 }
   
 .projects-container .projects-grid .project {
@@ -24,6 +24,9 @@
     border-radius: 5px;
     transition: transform .2s;
     margin: 0 auto;
+    width: 100%;        /* 🌟 가로 크기가 줄어든 격자에 맞춰 자동 축소됩니다 */
+    height: 220px;      /* 🌟 대조적인 이미지들의 세로 높이를 균일하게 맞추기 위해 추가 */
+    object-fit: cover;  /* 🌟 사진이 찌그러지지 않고 비율을 유지하며 채워지도록 설정 */
 }
   
 .zoom:hover {
@@ -31,6 +34,14 @@
 }
 
 @media screen {
+    /* 🌟 중간 크기 화면(태블릿 등)에서 너무 좁아 보이지 않도록 2열로 변환하는 구간 추가 */
+    @media (max-width: 1100px) {
+        .projects-container .projects-grid {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 30px;
+        }
+    }
+
     @media (max-width: 700px) {
         .projects-container {
             display: block;
@@ -44,6 +55,11 @@
       
         .projects-container .projects-grid .project {
             padding-bottom: 5%;
+        }
+
+        /* 모바일 화면에서는 세로 높이가 자동으로 맞춰지도록 설정 */
+        .zoom {
+            height: auto;
         }
     }
 }
