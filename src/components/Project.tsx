@@ -46,6 +46,17 @@ function Project() {
                 <a href="https://github.com/hyojeong33/Analyze-Insurance-cost" target="_blank" rel="noreferrer"><h2>Insurance Cost Prediction</h2></a>
                 <p>Conducted statistical analysis on medical insurance datasets to identify key factors influencing costs, utilizing regression models and data visualization in Python.</p>
             </div>
+
+            {/* 🌟 5. Neural Data Science (COGS 138) - 뇌 해부학 이미지 연동 완료 */}
+            <div className="project">
+                <a href="https://github.com/hyojeong33/COGS138_FinalProject_2026" target="_blank" rel="noreferrer">
+                    {/* public 폴더에 저장한 pic2.jpg 이미지를 불러옵니다 */}
+                    <img src={process.env.PUBLIC_URL + '/pic2.jpg'} className="zoom" alt="Brain regions involved in memory formation" width="100%"/>
+                </a>
+                <a href="https://github.com/hyojeong33/COGS138_FinalProject_2026" target="_blank" rel="noreferrer"><h2>Neural Data Science: Mapping the Stress Brain</h2></a>
+                <p>Integrated human brain genomic expression data ($NR3C1$, $NR3C2$, $FKBP5$) from the Allen Human Brain Atlas with computational text-mining analytics (LISC toolkit). Resolved environment dependency blocks and optimized workflows under memory-constrained environments, achieving a PCA cumulative variance explanation of 94.4% to bridge molecular neurobiology with behavioral literature concepts.</p>
+            </div>
+            
         </div>
     </div>
     );
