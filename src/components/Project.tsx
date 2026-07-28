@@ -47,14 +47,30 @@ function Project() {
                 <p>Conducted statistical analysis on medical insurance datasets to identify key factors influencing costs, utilizing regression models and data visualization in Python.</p>
             </div>
 
-            {/* 🌟 5. Neural Data Science (COGS 138) - 뇌 해부학 이미지 연동 완료 */}
+            {/* 5. Neural Data Science (COGS 138) */}
             <div className="project">
                 <a href="https://github.com/hyojeong33/COGS138_FinalProject_2026" target="_blank" rel="noreferrer">
-                    {/* public 폴더에 저장한 pic2.jpg 이미지를 불러옵니다 */}
                     <img src={process.env.PUBLIC_URL + '/pic2.jpg'} className="zoom" alt="Brain regions involved in memory formation" width="100%"/>
                 </a>
                 <a href="https://github.com/hyojeong33/COGS138_FinalProject_2026" target="_blank" rel="noreferrer"><h2>Neural Data Science: Mapping the Stress Brain</h2></a>
                 <p>Integrated human brain genomic expression data ($NR3C1$, $NR3C2$, $FKBP5$) from the Allen Human Brain Atlas with computational text-mining analytics (LISC toolkit). Resolved environment dependency blocks and optimized workflows under memory-constrained environments, achieving a PCA cumulative variance explanation of 94.4% to bridge molecular neurobiology with behavioral literature concepts.</p>
+            </div>
+
+            {/* 🌟 6. Knowledge Atlas (오픈소스 갤러리 뷰어 이미지 완벽 반영) */}
+            <div className="project">
+                <a href="https://github.com/hyojeong33/Knowledge_Atlas/tree/track/1-staging/hyl043" target="_blank" rel="noreferrer">
+                    {/* public/knowledge_atlas_viewer.png 이미지를 안전하게 로드합니다 */}
+                    <img src={process.env.PUBLIC_URL + '/knowledge_atlas_viewer.png'} className="zoom" alt="Knowledge Atlas Web Viewer Dashboard" width="100%"/>
+                </a>
+                <a href="https://github.com/hyojeong33/Knowledge_Atlas/tree/track/1-staging/hyl043" target="_blank" rel="noreferrer">
+                    <h2>Knowledge Atlas: Open-Source Image Tagger</h2>
+                </a>
+                <p>
+                    Contributed to the open-source pipeline by engineering a Python-based batch annotation script for 1,204 images 
+                    and building an interactive HTML/JS web viewer. Implemented dynamic score-based color bars and effect-tag filtering. 
+                    Documented full-stack troubleshooting workflows—including local server reactivation (python -m http.server) 
+                    and asset path resolution—on the active staging branch.
+                </p>
             </div>
             
         </div>
